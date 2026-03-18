@@ -77,4 +77,4 @@ Seaborn
 
 Matplotlib
 
-Jupyter / Google Colab
+Google Colab

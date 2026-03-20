@@ -66,7 +66,7 @@ Project Structure
 
 telco_churn_analysis.ipynb – main notebook with EDA and ML
 
-telco_churn.csv – dataset (optional or external link)
+telco_churn.csv –  ([data set](https://www.kaggle.com/datasets/dhrubangtalukdar/telco-customer-churn-data))
 
 How to Run
 

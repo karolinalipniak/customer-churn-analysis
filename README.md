@@ -5,7 +5,7 @@ This project analyzes the Telco Customer Churn dataset to explore patterns and f
 The goal is to both understand customer behavior (EDA) and predict churn using machine learning models.
 
 
-Dataset
+<b> Dataset </b>
 
 Source: Telco Customer Churn dataset
 

@@ -1,75 +1,90 @@
-Exploratory Data Analysis of Telco Customer Churn to identify key drivers of customer retention and churn.
-
 Telco Customer Churn Analysis
 Project Overview
 
-This project analyzes the Telco Customer Churn dataset to explore patterns and factors influencing customer churn. The goal is to understand which customers are more likely to leave and identify key trends in contract type, payment method, tenure, and monthly charges.
-
-The analysis is done using Python, Pandas, Seaborn, and Matplotlib, with visualizations and statistical summaries.
+This project analyzes the Telco Customer Churn dataset to explore patterns and factors influencing customer churn.
+The goal is to both understand customer behavior (EDA) and predict churn using machine learning models.
 
 Dataset
 
-Source: [Telco Customer Churn dataset] (include link if from Kaggle or similar)
+Source: Telco Customer Churn dataset
 
-Contains customer information such as:
+Includes customer information such as:
 
-Customer ID
-
-Gender
-
-Senior Citizen status
-
-Partner and Dependents
-
-Tenure
+Demographics
 
 Contract type
 
 Payment method
 
-Monthly charges, Total charges
+Tenure
+
+Monthly and total charges
 
 Churn (Yes/No)
 
+Exploratory Data Analysis (EDA)
+
+The analysis focused on identifying patterns in customer churn using visualizations and summary statistics.
+
 Key Findings
 
-Customers on month-to-month contracts churn the most.
+Customers on month-to-month contracts churn the most
 
-Short-tenure customers are more likely to leave.
+Short-tenure customers are more likely to leave
 
-Certain payment methods, e.g., Electronic Check, show higher churn.
+Certain payment methods (e.g., Electronic Check) show higher churn
 
-Higher Monthly Charges correlate with higher churn probability.
+Higher monthly charges are associated with increased churn
 
-Visualizations
+Machine Learning
 
-The analysis includes visualizations such as:
+Two models were implemented to predict customer churn:
 
-Customer churn distribution
+Logistic Regression – baseline, interpretable model
 
-Churn by contract type
+Random Forest – more advanced model capturing complex patterns
 
-Churn by payment method
+Results
 
-Monthly charges distribution by churn
+Random Forest achieved better performance than Logistic Regression
 
-Customer tenure distribution by churn
+Churn is influenced by multiple interacting factors, not just one variable
 
-These visualizations are included in the notebook (telco_churn_analysis.ipynb) with clear, readable charts.
+Feature Importance
+
+The most important features identified:
+
+Contract type
+
+Tenure
+
+Monthly charges
+
+⚠️ CustomerID was removed before modeling as it is a unique identifier and does not carry predictive value.
+
+Project Structure
+
+telco_churn_analysis.ipynb – main notebook with EDA and ML
+
+telco_churn.csv – dataset (optional or external link)
 
 How to Run
 
 Clone the repository:
 
-git clone https://github.com/USERNAME/telco_churn_analysis.git
+git clone https://github.com/USERNAME/customer-churn-analysis.git
 
-Open the notebook in Google Colab or Jupyter Notebook.
+Open the notebook in:
 
-Run all cells to reproduce the analysis and visualizations.
+Google Colab
+
+Jupyter Notebook
+
+Run all cells to reproduce the analysis and models.
 
 Technologies Used
 
-Python 3.x
+Python
 
 Pandas
 
@@ -77,4 +92,8 @@ Seaborn
 
 Matplotlib
 
-Google Colab
+Scikit-learn
+
+Conclusion
+
+This project demonstrates how combining exploratory data analysis with machine learning can provide deeper insights into customer churn and improve predictive capabilities.
